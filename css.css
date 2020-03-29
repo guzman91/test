@@ -293,3 +293,14 @@ h6 {
   position: relative;
   width: 379px;
 }
+
+.mountains-love > img {
+  -webkit-filter: grayscale(0) blur(0);
+  filter: grayscale(0) blur(0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.mountains-love > img:hover {
+  -webkit-filter: grayscale(100%) blur(3px);
+  filter: grayscale(75%) blur(1px);
+}
