@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
-        href="https://fonts.googleapis.com/css?family=Euphoria+Script|Open+Sans:400,600,700|Raleway:400,700&display=swap"
+        href="https://fonts.googleapis.com/css?family=Euphoria+Script|Open+Sans:400,600,700|Raleway:400,700|Roboto&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css.css" />
@@ -104,12 +104,37 @@
 
 
         </div>
-        <div class="container"></div>
+        <div class="container">
+            <div class="offer">
+                <img class="offer-waves" src="pictures/Waves.png" alt="">
+                <h3>DO YOU WANNA GO?</h3>
+                <p>Aliquam sed posuere urna, et gravida nisl. Praesent<br>interdum nisl libero, pretium egestas purus
+                    eleifend vitae. Mauris suscipit vel lectus at luctus.</p>
+                <div class="offer-form">
+                    <input type="text" placeholder="Your name:" maxlength="24">
+                    <input type="text" placeholder="Your phone:" maxlength="24" onkeypress='validate(event)'>
+                    <input type="button" value="ORDER NOW">
+
+                </div>
+            </div>
+        </div>
         <div class="container"></div>
         <div class="container"></div>
         <div class="container"></div>
         <div class="container"></div>
     </div>
+    <script>
+        function validate(evt) {
+            var theEvent = evt || window.event;
+            var key = theEvent.keyCode || theEvent.which;
+            key = String.fromCharCode(key);
+            var regex = /[0-9]|\./;
+            if (!regex.test(key)) {
+                theEvent.returnValue = false;
+                if (theEvent.preventDefault) theEvent.preventDefault();
+            }
+        }
+    </script>
 </body>
 
 </html>
