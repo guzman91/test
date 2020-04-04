@@ -438,7 +438,7 @@ h6 {
 .scheme {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 100%;
 }
@@ -448,7 +448,7 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25px;
+  margin: 25px 0;
 }
 
 .scheme-header > img {
@@ -460,6 +460,7 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 15px;
   /* border: 1px solid green; */
 }
 
@@ -489,4 +490,94 @@ strong {
 .scheme-body-content {
   display: flex;
   flex-direction: row;
+}
+
+/* SECTION 6  */ /* SECTION 6  */ /* SECTION 6  */
+
+.container:nth-child(6) {
+  background-image: url(pictures/background-journal.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.travel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+.travel-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.travel-header > img {
+  width: 70%;
+}
+
+/* test */
+.travel-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.travel-body figure {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.travel-body figure::before {
+  position: absolute;
+  top: 0;
+  left: -96%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.travel-body figure:hover::before {
+  -webkit-animation: shine 0.75s;
+  animation: shine 0.75s;
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+.travel-body > div {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+figure > img {
+  display: block;
 }
