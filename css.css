@@ -638,3 +638,22 @@ figure > img {
 .column > img:hover {
   cursor: pointer;
 }
+
+.logos {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background-color: #f8f9fa;
+}
+
+.logos > img {
+  margin: 5px 42px;
+}
+
+.logos > img:hover {
+  cursor: pointer;
+}
