@@ -14,6 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 1920px;
 }
 
 .header {
@@ -80,6 +81,7 @@ span {
   flex-direction: column;
   width: 100%;
   height: 100vh;
+  min-height: 754px;
 }
 
 .container:nth-child(1) {
@@ -580,4 +582,59 @@ strong {
 
 figure > img {
   display: block;
+}
+
+/* SECTION 7  */ /* SECTION 7  */ /* SECTION 7  */
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+.gallery-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  min-width: 210px;
+}
+
+.gallery-header > img {
+  width: 70%;
+}
+
+.gallery-body {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: nowrap;
+  padding: 0 4px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 900px;
+  height: 533px;
+  overflow: hidden;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  /* flex: 25%; */
+
+  padding: 0 4px;
+}
+
+.column > img {
+  display: block;
+  margin-top: 8px;
+
+  width: 100%;
+}
+
+.column > img:hover {
+  cursor: pointer;
 }
