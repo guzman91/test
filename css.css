@@ -82,6 +82,8 @@ span {
   width: 100%;
   height: 100vh;
   min-height: 754px;
+  /* position: sticky;
+  top: 0; */
 }
 
 .container:nth-child(1) {
@@ -208,10 +210,10 @@ h3 {
 
 .container:nth-child(3) {
   background-color: white;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   /* border: 1px dashed green; */
-  height: 1200px;
+  height: 1000px;
 }
 
 h2 {
@@ -226,7 +228,8 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 80px;
+  margin: 25px 0;
+  /* margin-bottom: 80px; */
   /* border: 1px solid purple; */
 }
 
@@ -655,5 +658,207 @@ figure > img {
 }
 
 .logos > img:hover {
+  cursor: pointer;
+}
+/* SECTION 8  */ /* SECTION 8  */ /* SECTION 8  */
+
+.container:nth-child(8) {
+  height: 200px;
+  min-height: 200px;
+}
+
+/* SECTION 9  */ /* SECTION 9  */ /* SECTION 9  */
+
+.container:nth-child(9) {
+  height: 1000px;
+  background-image: url(pictures/background-footer.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+.footer-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  min-width: 210px;
+}
+
+.footer-header > img {
+  width: 70%;
+}
+
+.footer-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 25px;
+}
+
+.comment > img {
+  width: 24px;
+}
+
+.comment > p {
+  width: 413px;
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #949494;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.author > img {
+  margin-right: 15px;
+}
+
+.author > p {
+  color: #36aeea;
+}
+
+.author > p > strong {
+  color: #36aeea;
+}
+
+.footer-contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 150px;
+  border-radius: 5px;
+  padding: 40px 25px;
+  background-image: url(pictures/background-form.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: rgba(0, 0, 255, 0.3); */
+  /* background-image: linear-gradient(
+    45deg,
+    rgba(91, 134, 144, 0.5),
+    rgba(195, 199, 206, 0.5)
+  ); */
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #36aeea;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 400px;
+}
+
+.footer-inputs > input {
+  height: 40px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: block;
+}
+
+.footer-inputs > input[type="text"] {
+  padding: 0 0 0 10px;
+  width: 390px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #cccccc;
+  border: 1px solid white;
+}
+
+.footer-inputs > input[type="button"] {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  width: 402px;
+  height: 42px;
+  color: white;
+  background-color: #36aeea;
+  border: 1px solid #36aeea;
+}
+
+.footer-contact-form > p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0 0 25px 0;
+}
+
+.footer-inputs > input::placeholder {
+  color: #cccccc;
+}
+
+.footer-inputs > input[type="text"]:focus::-webkit-input-placeholder {
+  color: transparent;
+  outline: 0;
+  outline-offset: 0;
+}
+
+.footer-inputs > input[type="text"]:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+/* SECTION 10  */ /* SECTION 10  */ /* SECTION 10  */
+
+.container:nth-child(10) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3b5157;
+  height: 100px;
+  min-height: 100px;
+  width: 100%;
+}
+
+.container:nth-child(10) > p {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #7cc0d4;
+}
+
+.container:nth-child(10) > p > strong {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #7cc0d4;
+}
+
+.social-logos > img {
+  display: inline-block;
+}
+
+.social-logos > img:hover {
   cursor: pointer;
 }
